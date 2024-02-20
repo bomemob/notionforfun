@@ -1,24 +1,205 @@
-function showRemaining() {
-    now = new Date();
-    var dayOfWeek = now.getDay();
+import React from 'react'
 
-    // If it's Saturday (6) or Sunday (0), show '-' 
-    if (dayOfWeek == 0 || dayOfWeek == 6) {
-        left_days.innerHTML = "-<br> <span class=\"small\"> days </span>";
-        left_hours.innerHTML = "-<br> <span class=\"small\"> hours</span>";
-        left_minutes.innerHTML = "-<br> <span class=\"small\">mins</span>";
-        left_seconds.innerHTML = "-<br> <span class=\"small\">secs</span>";
-        return; // Exit the function early
-    }
+import projectStyles from '.style.module.css'
+import styles from './home.module.css'
 
-    // If it's Monday (1) through Friday (5)
-    days = 5 - dayOfWeek;
-    hours = 23 - now.getHours();
-    minutes = 59 - now.getMinutes();
-    seconds = 59 - now.getSeconds();
-
-    left_days.innerHTML = days + "<br> <span class=\"small\"> days </span>";
-    left_hours.innerHTML = hours + "<br> <span class=\"small\"> hours</span>";
-    left_minutes.innerHTML = minutes + "<br> <span class=\"small\">mins</span>";
-    left_seconds.innerHTML = seconds + "<br> <span class=\"small\">secs</span>";
+const Home = (props) => {
+  return (
+    <div className={styles['container']}>
+      <div className={styles['container1']}>
+        <div className={styles['container2']}>
+          <div className={styles['i-phone11-pro-profile-screen']}>
+            <div className={styles['profile-top']}>
+              <img
+                alt="image31810"
+                src="/image31810-i1r8-200h.png"
+                className={styles['image3']}
+              />
+              <img
+                alt="Ellipse44249"
+                src="/ellipse44249-mn3o.svg"
+                className={styles['ellipse4']}
+              />
+              <span className={styles['text']}>
+                <span>Anna Miller</span>
+              </span>
+              <span className={styles['text02']}>
+                <span>edit profile</span>
+              </span>
+              <img
+                alt="Ok483"
+                src="/ok483-dp9-200h.png"
+                className={styles['ok']}
+              />
+            </div>
+            <div className={styles['profile-data']}>
+              <span className={styles['text04']}>
+                <span>Languages</span>
+              </span>
+              <span className={styles['text06']}>
+                <span>location</span>
+              </span>
+              <span className={styles['text08']}>
+                <span>member sience</span>
+              </span>
+              <span
+                className={` ${styles['text10']} ${projectStyles['profiledata-text']} `}
+              >
+                <span>English, French</span>
+              </span>
+              <span
+                className={` ${styles['text12']} ${projectStyles['profiledata-text']} `}
+              >
+                <span>Toronto, ON</span>
+              </span>
+              <span
+                className={` ${styles['text14']} ${projectStyles['profiledata-text']} `}
+              >
+                <span>November 2020</span>
+              </span>
+            </div>
+            <img
+              alt="entypodotsthreevertical1810"
+              src="/entypodotsthreevertical1810-jxe9.svg"
+              className={styles['entypodotsthreevertical']}
+            />
+            <div className={styles['frame12']}>
+              <div className={styles['text-cources']}>
+                <span className={styles['text16']}>
+                  <span>your cources</span>
+                </span>
+                <span className={styles['text18']}>
+                  <span>eCources</span>
+                </span>
+                <span className={styles['text20']}>
+                  <span>Tutoring</span>
+                </span>
+                <span className={styles['text22']}>
+                  <span>edit &gt;</span>
+                </span>
+              </div>
+              <div className={styles['first-iteme-cource']}>
+                <img
+                  alt="Rectangle104310"
+                  src="/rectangle104310-v7ii-200h.png"
+                  className={styles['rectangle10']}
+                />
+                <img
+                  alt="image51811"
+                  src="/image51811-74gl-200h.png"
+                  className={styles['image5']}
+                />
+                <span className={styles['text24']}>
+                  <span>
+                    <span>photographing</span>
+                    <br></br>
+                    <span>hawaii</span>
+                  </span>
+                </span>
+              </div>
+              <div className={styles['second-iteme-cource']}>
+                <img
+                  alt="Rectangle104315"
+                  src="/rectangle104315-7dwu-200h.png"
+                  className={styles['rectangle101']}
+                />
+                <img
+                  alt="image61811"
+                  src="/image61811-hz7c-200h.png"
+                  className={styles['image6']}
+                />
+                <span className={styles['text29']}>
+                  <span>
+                    <span>photographing</span>
+                    <br></br>
+                    <span>
+                      Azerbaijan
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div className={styles['third-iteme-cource']}>
+                <img
+                  alt="Rectangle104319"
+                  src="/rectangle104319-2gv-200h.png"
+                  className={styles['rectangle102']}
+                />
+                <img
+                  alt="image14318"
+                  src="/image14318-8as-200w.png"
+                  className={styles['image1']}
+                />
+                <span className={styles['text34']}>
+                  <span>
+                    <span>photographing</span>
+                    <br></br>
+                    <span>
+                      iceland
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div className={styles['first-item-tutoring']}>
+                <img
+                  alt="Rectangle104325"
+                  src="/rectangle104325-c958-200h.png"
+                  className={styles['rectangle103']}
+                />
+                <img
+                  alt="image71811"
+                  src="/image71811-wdl-200h.png"
+                  className={styles['image7']}
+                />
+                <span className={styles['text39']}>
+                  <span>portret</span>
+                </span>
+              </div>
+              <div className={styles['second-item-tutoring']}>
+                <img
+                  alt="Rectangle104331"
+                  src="/rectangle104331-h2kw-200h.png"
+                  className={styles['rectangle104']}
+                />
+                <img
+                  alt="image81814"
+                  src="/image81814-gmd-200h.png"
+                  className={styles['image8']}
+                />
+                <span className={styles['text41']}>
+                  <span>panorama</span>
+                </span>
+              </div>
+              <div className={styles['third-item-tutoring']}>
+                <img
+                  alt="Rectangle104335"
+                  src="/rectangle104335-kytr-200h.png"
+                  className={styles['rectangle105']}
+                />
+                <img
+                  alt="image91815"
+                  src="/image91815-yvss-200w.png"
+                  className={styles['image9']}
+                />
+                <span className={styles['text43']}>
+                  <span>street</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
+
+export default Home
