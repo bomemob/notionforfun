@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/notionforfun/static/css/main.006ac6db.css",
+    "main.js": "/notionforfun/static/js/main.220d71fe.js",
+    "index.html": "/notionforfun/index.html",
+    "main.006ac6db.css.map": "/notionforfun/static/css/main.006ac6db.css.map",
+    "main.220d71fe.js.map": "/notionforfun/static/js/main.220d71fe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.006ac6db.css",
+    "static/js/main.220d71fe.js"
+  ]
+}
